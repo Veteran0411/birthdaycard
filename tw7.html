@@ -183,6 +183,30 @@ body{
     }
     
 }
+
+
+@keyframes mymove{
+  0% {right:0px;}
+  20%{right:50px; transform:rotate(5deg);}
+  40%{right:100px;}
+  60%{right:50px; transform:rotate(-5deg);}
+  80%{right:70px; transform:rotate(5deg);}
+  100%{right:0px; transform:rotate(0deg);}
+}
+svg{
+  position:absolute;
+  display:block;
+  top: 0;
+  float:left;
+  background:transparent;
+  // border: slateblue 3px solid;
+  transform-origin:bottom center;
+  animation: mymove 10s infinite ease-in-out; 
+  ellipse{
+    opacity:0.2;
+    overflow:hidden;
+  }
+}
     </style>
 </head>
 <body>
@@ -224,5 +248,22 @@ body{
 
 </div>
 
+<svg class="balloon" width="100" height="300" viewbox="0,0,100,300">
+    <defs>
+      <clipPath id="cut-off">
+        <circle cx="50" cy="50" r="40"/>
+      </clipPath>
+    </defs>
+    <g>
+      <line id="draad" x1="50" y1="80" 
+          x2="50" y2="280" 
+          stroke="LightCoral" 
+          stroke-width="7"/>
+      <circle cx="50" cy="50" r="40" fill="SlateBlue" />
+      <ellipse cx="25" cy="25" rx="20" ry="20" fill="ghostwhite" clip-path="url(#cut-off)"/>
+      <circle
+    </g>
+    
+</svg>
 </body>
 </html>
