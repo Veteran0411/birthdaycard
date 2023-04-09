@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           background: url("https://img.freepik.com/premium-vector/aesthetic-mountain-wallpaper-background-image_584397-109.jpg?w=2000");
+           background-size: cover;
+           background-attachment: fixed;
+           
+        }
+.card{
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    align-items: center;
+    justify-content: center;
+}
+.inside{
+    width: 600px;
+    position: absolute;
+    height: 600px;
+    border-radius: 0 50px 0 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(246,245,254);
+background: linear-gradient(90deg, rgba(246,245,254,1) 26%, rgba(249,197,7,1) 48%, rgba(0,0,0,1) 99%);
+}
+.outside{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 0 50px 0 0;
+    transform-origin:left;
+    animation: som 11s linear  ;
+    animation-fill-mode: forwards;
+    background-color: rgb(10, 10, 10);
+    color: whitesmoke;
+}
+.outside1{
+    position: absolute;
+    width: 600px;
+    box-sizing: border-box;
+    height: 600px;
+    border-radius: 0 50px 0 0;
+   
+    transform-origin:left;
+    animation: som1 7s linear 5s ;
+    animation-fill-mode: forwards;
+    background-color: rgb(4, 4, 4);
+    color: whitesmoke;
+}
+.outside2{
+    position: absolute;
+    width: 600px;
+    box-sizing: border-box;
+    height: 600px;
+    
+    border-radius: 0 50px 0 0;
+    transform-origin:left;
+    animation: som2 7s linear 10s ;
+    animation-fill-mode: forwards;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+}
+.info{
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    margin-left: 30px;
+  
+}
+
+img{
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 50px 0px 50px;
+}
+p{
+    font-size: 50px;
+}
+.inside.info img{
+    padding: 20px; 
+    box-sizing: border-box;
+    background-color: black;
+    width: 400px;
+    height: 580px;
+}
+#queen{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+@keyframes som {
+    0%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+@keyframes som1{
+    0%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+@keyframes som2{
+    0%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+
+@media screen and (max-width:600px) {
+body{
+    padding: 30px;
+    box-sizing: border-box;
+}
+    .card{
+        padding: 20px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    .inside{
+    width: 400px;
+       
+        
+    height: 400px;
+
+}
+.outside{
+  
+    width: 400px;
+    height: 400px;
+
+}
+.outside1{
+ 
+    width: 400px;
+    
+    height: 400px;
+}
+.outside2{
+    width: 400px;
+    
+    height: 400px;
+}
+    img{
+        width: 400px;
+    
+    height: 400px;
+    }
+    #queen{
+        width: 200px;
+        height: 280px;
+        margin-right: 20px;
+    }
+    p{
+       padding-left: 30px;
+       font-size: 25px;
+       box-sizing: border-box;
+    }
+    
+}
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="inside"> 
+       
+        <div class="info">
+            <p> Happy Birthday Puri</p>
+        
+        </div>
+
+        <div class="info">
+        <img src="E:\girlpuri.jpg" alt="" width="300px" height="580px" id="queen">
+        </div>
+        
+ 
+    </div>
+    
+    <div class="outside">
+        <img src="https://res.cloudinary.com/teepublic/image/private/s--dadJU4sz--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1619590188/production/designs/21444371_0.jpg" alt=""
+        width="600px" height="600px">
+    </div>
+
+    <div class="outside2">
+        <img src="E:\collage2.jpg" alt=""  width="600px" height="600px">
+    </div>
+
+
+    <div class="outside1">
+        <img src="E:\collage1.jpg" alt=""  width="600px" height="600px">
+    </div>
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
